@@ -60,6 +60,8 @@ class CanvasView: UIView {
         // Drawing code
     }
     */
-    
-
 }
+
+//extension UIImage {
+//    
+//}

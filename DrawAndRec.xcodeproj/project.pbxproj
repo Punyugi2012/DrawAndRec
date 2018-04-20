@@ -13,6 +13,7 @@
 		B885E0972089D9F70089870F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B885E0962089D9F70089870F /* Assets.xcassets */; };
 		B885E09A2089D9F70089870F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B885E0982089D9F70089870F /* LaunchScreen.storyboard */; };
 		B885E0A22089DACD0089870F /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885E0A12089DACD0089870F /* CanvasView.swift */; };
+		B885E0A6208A00770089870F /* MNIST.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B885E0A5208A00770089870F /* MNIST.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B885E0992089D9F70089870F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B885E09B2089D9F70089870F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B885E0A12089DACD0089870F /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		B885E0A5208A00770089870F /* MNIST.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNIST.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		B885E08E2089D9F60089870F /* DrawAndRec */ = {
 			isa = PBXGroup;
 			children = (
+				B885E0A5208A00770089870F /* MNIST.mlmodel */,
 				B885E08F2089D9F60089870F /* AppDelegate.swift */,
 				B885E0912089D9F60089870F /* ViewController.swift */,
 				B885E0A12089DACD0089870F /* CanvasView.swift */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B885E0A6208A00770089870F /* MNIST.mlmodel in Sources */,
 				B885E0922089D9F60089870F /* ViewController.swift in Sources */,
 				B885E0902089D9F60089870F /* AppDelegate.swift in Sources */,
 				B885E0A22089DACD0089870F /* CanvasView.swift in Sources */,
@@ -293,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = max.DrawAndRec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = max.DrawAndRec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

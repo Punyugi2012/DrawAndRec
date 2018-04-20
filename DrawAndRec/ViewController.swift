@@ -25,6 +25,27 @@ class ViewController: UIViewController {
     @IBAction func clearCanvas(_ sender: UIButton) {
         self.canvasView.clearCanvas()
     }
+    
+//    @IBAction func save(_ sender: UIButton) {
+//        UIGraphicsBeginImageContextWithOptions(self.canvasView.bounds.size, false, 0.0)
+//        self.canvasView.drawHierarchy(in: self.canvasView.bounds, afterScreenUpdates: true)
+//        let imageData = UIGraphicsGetImageFromCurrentImageContext();
+//        UIGraphicsEndImageContext();
+//        UIImageWriteToSavedPhotosAlbum(imageData!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+//    }
+//
+//    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+//        if let error = error {
+//            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+//            ac.addAction(UIAlertAction(title: "OK", style: .default))
+//            present(ac, animated: true)
+//        } else {
+//            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
+//            ac.addAction(UIAlertAction(title: "OK", style: .default))
+//            present(ac, animated: true)
+//        }
+//    }
+
 
 }
 
