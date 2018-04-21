@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     @IBAction func recognize(_ sender: UIButton) {
         let image = UIImage(view: self.canvasView)
         let scaledImage = scaleImage(image: image, toSize: CGSize(width: 28, height: 28))
-        UIImageWriteToSavedPhotosAlbum(scaledImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+//        UIImageWriteToSavedPhotosAlbum(scaledImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
         let imageRequestHandler = VNImageRequestHandler(cgImage: scaledImage.cgImage!, options: [:])
         do {
             try imageRequestHandler.perform(self.requests)
@@ -76,17 +76,17 @@ class ViewController: UIViewController {
 //        UIImageWriteToSavedPhotosAlbum(imageData!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
 //    }
 //
-    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        if let error = error {
-            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        } else {
-            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        }
-    }
+//    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+//        if let error = error {
+//            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+//            ac.addAction(UIAlertAction(title: "OK", style: .default))
+//            present(ac, animated: true)
+//        } else {
+//            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
+//            ac.addAction(UIAlertAction(title: "OK", style: .default))
+//            present(ac, animated: true)
+//        }
+//    }
 
 
 }
