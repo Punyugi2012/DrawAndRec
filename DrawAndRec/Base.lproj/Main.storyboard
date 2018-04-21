@@ -39,6 +39,9 @@
                                         <rect key="frame" x="323" y="0.0" width="91" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Recognize"/>
+                                        <connections>
+                                            <action selector="recognize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cdw-dB-g1g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -66,11 +69,12 @@
                     </view>
                     <connections>
                         <outlet property="canvasView" destination="aGd-rP-F0m" id="eq4-vg-PrJ"/>
+                        <outlet property="digitLabel" destination="2pa-PV-WVr" id="Rwy-vQ-8nB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.333333333333336" y="39.945652173913047"/>
+            <point key="canvasLocation" x="37.681159420289859" y="-60.326086956521742"/>
         </scene>
     </scenes>
 </document>
